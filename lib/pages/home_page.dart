@@ -24,9 +24,23 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         toolbarHeight: 80,
         centerTitle: true,
-        title: Text(
-          "Qur'an Terjemahan Indonesia",
-          style: myThemes.headerText,
+        title: Column(
+          children: [
+            Text(
+              "Qur'an Terjemahan Indonesia",
+              style: myThemes.headerText.copyWith(
+                fontSize: 21
+              ),
+            ),
+            SizedBox(height: 5,),
+            Text(
+              "(Developed by: yaserantariksa)",
+              style: myThemes.bodyText.copyWith(
+                color: Colors.white,
+                fontSize: 13
+              ),
+            )
+          ],
         ),
         backgroundColor: myThemes.primaryColor,
         foregroundColor: Colors.white,

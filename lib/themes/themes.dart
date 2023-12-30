@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 class MyThemes {
   Color primaryColor = Colors.teal;
 
-  TextStyle headerText = GoogleFonts.poppins().copyWith(fontWeight: FontWeight.w600);
-  TextStyle bodyText = GoogleFonts.poppins();
-  TextStyle arabText = GoogleFonts.lateef();
+  TextStyle headerText = GoogleFonts.getFont('Poppins');
+  TextStyle bodyText = GoogleFonts.getFont('Poppins');
+  TextStyle arabText = GoogleFonts.getFont('Lateef');
 }
